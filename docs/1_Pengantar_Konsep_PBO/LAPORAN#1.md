@@ -2,12 +2,12 @@
 
 ## Kompetensi
 
-(ketiklah kompetensi tiap praktikum di sini)
+1. Memahami paradigma pemrograman berbasis objek.
+2. Mampu mengenal objek di dalam pemrograman berorientasi objek.
 
 ## Ringkasan Materi
 
-(berisi catatan penting pribadi selama praktikum berlangsung ataupun menemukan permasalahan khusus saat melakukan percobaan)
-
+pemroggraman berorientasi obyek(PBO) merupakan paradigma pemrograman yang popular saat ini yang telah menggantikan teknik pemrograman berbasis prosedur. 
 ## Percobaan
 
 ### Percobaan 1
@@ -32,7 +32,26 @@ Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengant
 
 ## Pertanyaan
 
-(silakan ketik pertanyaan di sini beserta jawabannya.)
+1. Sebutkan dan jelaskan aspek-aspek yang ada pada pemrograman berorientasi objek!
+jawab : 
+a. objeck adalah suatu rangkaian dalam pemrograman yang terdiri dari state dan behavior.
+b. class adalah blueprint atatu prototyppe dari objek.
+c. enkapulasi dalam berinteraksi dengan objek tidak perlu mengetahui kompleksitas yang ada didalamnya.
+d. inheritance adalah pewarisan objek. interheritance juga memungkinkan untuk memperluas fungsionalitas program tanpa harus meribah banyak bagian program.
+e. polimorfisme juga meniru sifat objek di dunia nyata, dimana sebuah obje dapat memiliki bentk atau menjelma menjadi bentuk-bentuk lain.
+2. apa yang dimaksud dengan objek dan apa bedanya dengan class?
+jawab : 
+objek dalah suatu rangkaian dalam program yang terdiri dari tate dan behavior.
+perbedaannya : objek merupakan hasil instansiasi dari suatu kelas, sedangkan kelas bisa digunakan untuk menciptakan banyak objek.
+3. sebutkan salah satu kelebihan utama dari pemrograman berorientasi objek dibandingkan dengan pemrograman structual!
+jawab:
+program lebih flexsibel dan modular, jika terjadi perubahan fitur maka dapat dipastikan keseluruhan program tidak akan terganggu
+4. pada class sepeda, terdapat state/atribut apa saja ? 
+jawab :
+atribut merek, kecepatan dan gear
+5. tambahan atribut warna pada class sepeda
+jawab : 
+
 
 ## Tugas
 
@@ -56,4 +75,4 @@ Jika saya melakukan plagiasi, kecurangan, atau melanggar hak kekayaan intelektua
 
 Ttd,
 
-***(silakan isi nama lengkap di sini)***
+***(Ela Widya Lestari)***
