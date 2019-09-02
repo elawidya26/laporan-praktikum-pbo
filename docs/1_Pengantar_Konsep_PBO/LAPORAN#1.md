@@ -12,7 +12,7 @@ pemroggraman berorientasi obyek(PBO) merupakan paradigma pemrograman yang popula
 
 ### Percobaan 1
 
-(berisi penjelasan percobaan 1. Jika ada rujukan ke file program, bisa dibuat linknya di sini.)
+cara awal membuat class, membuat object, kemudian cara mengakses method di dalam class tersebut.
 
 `contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
 
@@ -22,7 +22,7 @@ Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengant
 
 ### Percobaan 2
 
-(berisi penjelasan percobaan 2. Jika ada rujukan ke file program, bisa dibuat linknya di sini.)
+dalam perobaan kedua ini ada salah satu fitur inheritance yaitu untuk mengorganisir struktur pemrograman dengan natural. dan di tambahkan kode extends untuk deklarasi class SepedaGunung
 
 `contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
 
@@ -65,7 +65,7 @@ Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengant
 
 ## Kesimpulan
 
-(Berisi simpulan yang telah diperoleh selama praktikum atau belajar pada pertemuan ini)
+dalam pratikum ini kita dapat mengetahui atau mengenal objek di dalam pemrograman beriorientasi objek dan memahami paradigma pemrograman berbasis objek.
 
 ## Pernyataan Diri
 
