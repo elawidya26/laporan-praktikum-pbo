@@ -30,7 +30,9 @@ dalam perobaan kedua ini ada salah satu fitur inheritance yaitu untuk mengorgani
 
 ![contoh screenshot](img/percobaan2.png)
 
-Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/Contoh12345Habibie.java)
+Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720126Ela.java)
+Contoh link kode program : [SepedaGunung1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaGunung1841720126Ela.java)
+
 
 ## Pertanyaan
 
