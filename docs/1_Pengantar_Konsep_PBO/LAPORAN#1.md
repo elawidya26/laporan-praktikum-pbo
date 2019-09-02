@@ -17,6 +17,8 @@ cara awal membuat class, membuat object, kemudian cara mengakses method di dalam
 `contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
 
 ![perobaan1](img/percobaan1.png)
+![perobaan1](img/percobaan1b.png)
+![perobaan1](img/percobaan1c.png)
 
 Contoh link kode program : [Sepeda1841720126Ela](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720126Ela.java)
 Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720126Ela.java)
@@ -29,6 +31,8 @@ dalam perobaan kedua ini ada salah satu fitur inheritance yaitu untuk mengorgani
 `contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
 
 ![percobaan2](img/percobaan2.png)
+![percobaan2](img/percobaan2b.png)
+![percobaan2](img/percobaan2c.png)
 
 Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720126Ela.java)
 Contoh link kode program : [SepedaGunung1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaGunung1841720126Ela.java)
@@ -56,6 +60,8 @@ atribut merek, kecepatan dan gear
 5. tambahan atribut warna pada class sepeda
 jawab : 
 ![pertanyaan](img/pertanyaan5.png)
+![pertanyaan](img/pertanyaan5b.png)
+![pertanyaan](img/pertanyaan5c.png)
 Contoh link kode program : [Sepeda1841720126Ela](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720126Ela.java)
 Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720126Ela.java)
 
