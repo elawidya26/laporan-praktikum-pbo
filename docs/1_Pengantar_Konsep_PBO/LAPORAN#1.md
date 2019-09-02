@@ -26,7 +26,7 @@ dalam perobaan kedua ini ada salah satu fitur inheritance yaitu untuk mengorgani
 
 `contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
 
-![contoh screenshot](img/contoh-schot1.PNG)
+![contoh screenshot](img/percobaan2.png)
 
 Contoh link kode program : [ini contoh link ke kode program](../../src/1_Pengantar_Konsep_PBO/Contoh12345Habibie.java)
 
@@ -51,6 +51,7 @@ jawab :
 atribut merek, kecepatan dan gear
 5. tambahan atribut warna pada class sepeda
 jawab : 
+(img/pertanyaan5.png)
 
 
 ## Tugas
