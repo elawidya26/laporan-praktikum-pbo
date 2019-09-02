@@ -68,7 +68,8 @@ Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konse
 `contoh screenshot yang benar, menampilkan 3 komponen, yaitu struktur project, kode program, dan hasil kompilasi`
 
 ![tugas](img/tugasbener1.PNG)
-
+![tugas](img/tugasbener2.PNG)
+![tugas](img/tugasbener3.PNG)
 Contoh link kode program : [Mahasiswa1841720126Ela](../../src/1_Pengantar_Konsep_PBO/Mahasiswa1841720126Ela.java)
 Contoh link kode program : [Mahasiswa1841720126Ela2](../../src/1_Pengantar_Konsep_PBO/Mahasiswa1841720126Ela2.java)
 
