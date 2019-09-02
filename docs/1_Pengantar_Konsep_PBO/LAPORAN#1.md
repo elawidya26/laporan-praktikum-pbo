@@ -55,7 +55,10 @@ jawab :
 atribut merek, kecepatan dan gear
 5. tambahan atribut warna pada class sepeda
 jawab : 
-(img/pertanyaan5.png)
+![pertanyaan](img/pertanyaan5.png)
+Contoh link kode program : [Sepeda1841720126Ela](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720126Ela.java)
+Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720126Ela.java)
+
 
 
 ## Tugas
