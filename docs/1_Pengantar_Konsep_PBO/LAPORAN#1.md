@@ -19,6 +19,8 @@ cara awal membuat class, membuat object, kemudian cara mengakses method di dalam
 ![contoh screenshot](img/percobaan1.png)
 
 Contoh link kode program : [Sepeda1841720126Ela](../../src/1_Pengantar_Konsep_PBO/Sepeda1841720126Ela.java)
+Contoh link kode program : [SepedaDemo1841720126Ela](../../src/1_Pengantar_Konsep_PBO/SepedaDemo1841720126Ela.java)
+
 
 ### Percobaan 2
 
