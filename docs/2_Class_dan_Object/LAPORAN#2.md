@@ -17,7 +17,7 @@ Cara awal membuat class, membuat object, kemudian cara mengakses method di dalam
 Studi Kasus 1: Dalam suatu perusahaan salah satu data yang diolah adalah data karyawan. Setiap karyawan memiliki id, nama, jenis kelamin, jabatan, jabatan, dan gaji. Setiap mahasiswa juga bisa menampilkan data diri pribadi dan melihat gajinya. 
  
 1.	Gambarkan desain class diagram dari studi kasus 1!, 
-![perobaan1](img/p1jwb1.png)
+> ![percobaan1](img/p1jwb1.PNG)
 
 2.	Sebutkan Class apa saja yang bisa dibuat dari studi kasus 1!, 
 Class : 
@@ -50,15 +50,15 @@ link kode program : [TeskMahasiswa1841720126Ela](../../src/2_Class_dan_Object/Te
 
 1. jelaskan pada bagian mana proses pendeklarasian atribut pada program diatas?
 jawab : 
-![percobaan2](img/p2jwb1.png)
+![percobaan2](img/p2jwb1.PNG)
 
 2. jelaskan pada bagian mana proses pendeklarasian method pada program diatas ?
 jawab : 
-![percobaan2](img/p2jwb2.png)
+![percobaan2](img/p2jwb2.PNG)
 
 3. berapa banyak objek yang di instansial pada program di atas!
 jawab : 
-![percobaan2](img/p2jwb3.png)
+![percobaan2](img/p2jwb3.PNG)
 
 4.	Apakah yang sebenarnya dilakukan pada sintaks program “mhs1.nim=101” ?
 Jawab : 
@@ -101,16 +101,16 @@ jawab :
 
 2. buatlah program dari class diagram yang sudah anda buuat di no.1
 jawab : 
-![tugas2](img/tugas2a.PNG)
-![tugas2](img/tugas2b.PNG)
+![tugas2](img/tugas2a.png)
+![tugas2](img/tugas2b.png)
 
 link kode program : [SewaGame1841720126Ela](../../src/2_Class_dan_Object/SewaGame1841720126Ela.java)
 
 link kode program : [TestSewaGame1841720126Ela](../../src/2_Class_dan_Object/TestSewaGame1841720126Ela.java)
 
 3. buatlah program sesuai dengan class diagram berikut ini.
-![tugas3](img/tugas3a.PNG)
-![tugas3](img/tugas3b.PNG)
+![tugas3](img/tugas3a.png)
+![tugas3](img/tugas3b.png)
 
 link kode program :
 [Lingkaran1841720126Ela](../../src/2_Class_dan_Object/Lingkaran1841720126Ela.java)
@@ -120,8 +120,8 @@ link kode program : [TestLingkaran1841720126Ela](../../src/2_Class_dan_Object/Te
 
 
 4. buatlah program sesuai dengan class diaagram berikut ini.
-![tugas3](img/tugas4a.PNG)
-![tugas3](img/tugas4b.PNG)
+![tugas3](img/tugas4a.png)
+![tugas3](img/tugas4b.png)
 
 link kode program : [BarangTugas1841720126Ela](../../src/2_Class_dan_Object/BarangTugas1841720126Ela.java)
 
