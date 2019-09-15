@@ -22,9 +22,9 @@ Didalam percobaan enkapsulasi, buatlah class Motor yang memiliki atribut kecepat
 3. Ketikkan kode class Motor dibawah ini. 
 
 
-![percobaan1](img/percobaan1a.PNG)
+![percobaan1](img/percobaan1a.png)
 
-![percobaan1](img/percobaan1b.PNG)
+![percobaan1](img/percobaan1b.png)
 
 link kode program : 
 [Motor1841720126Ela](../../src/3_Enkapsulasi/Motor1841720126Ela.java)
@@ -35,11 +35,11 @@ link kode program :
 
 Pada percobaan ini akan digunakan access modifier untuk memperbaiki cara kerja class Motor pada percobaan ke-1. 
 
-![percobaan2](img/percobaan2a.PNG)
+![percobaan2](img/percobaan2a.png)
 
-![percobaan2](img/percobaan2b.PNG)
+![percobaan2](img/percobaan2b.png)
 
-![percobaan2](img/percobaan2c.PNG)
+![percobaan2](img/percobaan2c.png)
 
 
 link kode program : [Motor1841720126Ela](../../src/3_Enkapsulasi/Motor1841720126Ela.java)
@@ -54,7 +54,7 @@ jawab : : Karena status kontak masih off,  oleh karena itu kecepatan tidak bisa 
 jawab :  Agar atribut kecepatan pada class Motor.java tidak bisa diganti nilainya kecuali dengan method khusus pada class MotorDemo1841720126Ela.java 
 3. Ubah class Motor sehingga kecepatan maksimalnya adalah 100! 
 jawab : 
-![percobaan2 pertanyaan](img/p2jwb3.PNG)
+![percobaan2 pertanyaan](img/p2jwb3.png)
 
 
  
@@ -64,9 +64,9 @@ Misalkan di sebuah sistem informasi koperasi, terdapat class Anggota. Anggota me
 Semua atribut pada anggota tidak boleh diubah sembarangan, melainkan hanya dapat diubah melalui method setter, getter, setor dan tarik.
 Khusus untuk atribut simpanan tidak terdapat setter karena simpanan akan bertambah ketika melakukan transaksi setor dan akan berkurang ketika melakukan peminjaman/tarik. 
 
-![percobaan3](img/percobaan3a.PNG)
+![percobaan3](img/percobaan3a.png)
 
-![percobaan3](img/percobaan3b.PNG)
+![percobaan3](img/percobaan3b.png)
 
 link kode program : [Anggota1841720126Ela](../../src/3_Enkapsulasi/Anggota1841720126Ela.java)
 link kode program : [KoperasiDemo1841720126Ela](../../src/3_Enkapsulasi/KoperasiDemo1841720126Ela.java)
@@ -78,14 +78,14 @@ Untuk menampilkan nama pun harus melalui method getNama(), dan untuk menampilkan
 ## Percobaan 4-Konstruktor Instansiasi
 
 1. Langkah pertama percobaan 4 adalah ubah class KoperasiDemo1841720126Ela seperti berikut dan Hasil dari program tersebut adalah sebagai berikut
-![percobaan4](img/percobaan4a.PNG)
+![percobaan4](img/percobaan4a.png)
 
 2. Ubah class Anggota1841720126Ela menjadi seperti berikut 
  Pada class Anggota1841720126Ela dibuat kontruktor dengan access modifier default yang memiliki 2 parameter nama dan alamat. Dan didalam konstruktor tersebut dipastikan nilai simpanan untuk pertama kali adalah Rp. 0.
-![percobaan4](img/percobaan4b.PNG)
+![percobaan4](img/percobaan4b.png)
 
 3. Selanjutnya ubah class KoperasiDemo1841720126Ela sebagai berikut
-![percobaan4](img/percobaan4c.PNG)
+![percobaan4](img/percobaan4c.png)
 
 link kode program : [Anggota1841720126Ela](../../src/3_Enkapsulasi/Anggota1841720126Ela.java)
 link kode program : [KoperasiDemo1841720126Ela](../../src/3_Enkapsulasi/KoperasiDemo1841720126Ela.java)
@@ -124,8 +124,8 @@ Jawab : Method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjaka
 
  1. Cobalah program dibawah ini dan tuliskan hasil outputnya 
 jawab : 
-![Tugas1](img/tugas1a.PNG)
-![Tugas1](img/tugas1b.PNG)
+![Tugas1](img/tugas1a.png)
+![Tugas1](img/tugas1b.png)
 
 link kode program : [EncapDemo1841720126Ela](../../src/3_Enkapsulasi/EncapDemo1841720126Ela.java)
 link kode program : [EncapTest1841720126Ela](../../src/3_Enkapsulasi/EncapTest1841720126Ela.java)
@@ -136,8 +136,8 @@ jawab :
 
 3. Ubah program diatas agar atribut age dapat diberi nilai maksimal 30 dan minimal 18. 
 jawab : 
-![Tugas3](img/tugas3a.PNG)
-![Tugas3](img/tugas3b.PNG)
+![Tugas3](img/tugas3a.png)
+![Tugas3](img/tugas3b.png)
 
 link kode program : [EncapDemo1841720126Ela](../../src/3_Enkapsulasi/EncapDemo1841720126Ela.java)
 link kode program : [EncapTest1841720126Ela](../../src/3_Enkapsulasi/EncapTest1841720126Ela.java)
@@ -149,8 +149,8 @@ maka jumlah pinjaman akan berkurang sesuai dengan nominal yang diangsur.
 Buatlah class Anggota tersebut, berikan atribut, method dan konstruktor sesuai dengan kebutuhan.
 Uji dengan TestKoperasi berikut ini untuk memeriksa apakah class Anggota yang anda buat telah sesuai dengan yang diharapkan. 
 jawab : 
-![Tugas4](img/tugas4a.PNG)
-![Tugas4](img/tugas4b.PNG)
+![Tugas4](img/tugas4a.png)
+![Tugas4](img/tugas4b.png)
 
 link kode program : [AnggotaTugas1841720126Ela](../../src/3_Enkapsulasi/AnggotaTugas1841720126Ela.java)
 link kode program : [TestKoperasi1841720126Ela](../../src/3_Enkapsulasi/TestKoperasi1841720126Ela.java)
@@ -158,18 +158,18 @@ link kode program : [TestKoperasi1841720126Ela](../../src/3_Enkapsulasi/TestKope
 5. Modifikasi soal no. 4 agar nominal yang dapat diangsur minimal adalah 10% dari jumlah pinjaman saat ini.
 Jika mengangsur kurang dari itu, maka muncul peringatan “Maaf, angsuran harus 10% dari jumlah pinjaman”. 
 jawab : 
-![Tugas5](img/tugas5a.PNG)
-![Tugas5](img/tugas5b.PNG)
+![Tugas5](img/tugas5a.png)
+![Tugas5](img/tugas5b.png)
 
 link kode program : [AnggotaTugas1841720126Ela](../../src/3_Enkapsulasi/AnggotaTugas1841720126Ela.java)
 link kode program : [TestKoperasi1841720126Ela](../../src/3_Enkapsulasi/TestKoperasi1841720126Ela.java)
 
 6. Modifikasi class TestKoperasi, agar jumlah pinjaman dan angsuran dapat menerima input dari console. 
 jawab : 
-![Tugas6](img/tugas6a.PNG)
-![Tugas6](img/tugas6b.PNG)
-![Tugas6](img/tugas6c.PNG)
-![Tugas6](img/tugas6d.PNG)
+![Tugas6](img/tugas6a.png)
+![Tugas6](img/tugas6b.png)
+![Tugas6](img/tugas6c.png)
+![Tugas6](img/tugas6d.png)
 
 link kode program : [AnggotaTugas1841720126Ela](../../src/3_Enkapsulasi/AnggotaTugas1841720126Ela.java)
 link kode program : [TestKoperasi1841720126Ela2](../../src/3_Enkapsulasi/TestKoperasi1841720126Ela2.java)
