@@ -2,182 +2,249 @@
 
 ## Kompetensi
 
-1. Memahami konsep enkpsulasi dan konstruktor 
-2. Memahami konsep akses modifier
-3. Memahami konsep Instansiasi atribut atau method
+1. Memahami konsep relasi class 
+2. Memahami konsep mengimplementasikan relasi has-a dalam program
+
 
 
 ## Ringkasan Materi
 
-> Enkapsukasi disebut juga dengan information-hiding. Dalam berinteraksi dengan objek, seringkali kita tidak perlu mengetahui kompleksitas yang ada didalamnya. 
-enkapsulasi atau disebut juga information-hiding atau data hiding adalah menyembunyikan detail proses suatu objek dari pengguna. 
+> suatu sistem akan ditemukan lebih dari satu class yang saling memiliki keterkaitan antara class satu dengan yang lain. Pada percobaan‑percobaan sebelumnya, mayoritas kasus yang sudah dikerjakan hanya fokus pada satu class saja. Pada jobsheet ini akan dilakukan percobaan yang melibatkan beberapa class yang saling berelasi. 
+
  
 ## Percobaan
 
-### Percobaan 1-Enkapsulasi
+### Percobaan 1
 
-Didalam percobaan enkapsulasi, buatlah class Motor yang memiliki atribut kecepatan dan kontakOn, dan memiliki method printStatus() untuk menampilkan status motor. Seperti berikut 
-1. Buka Netbeans, buat project MotorEncapsulation. 
-2. Buat class Motor. Klik kanan pada package motorencapsulation – New – Java Class. 
-3. Ketikkan kode class Motor dibawah ini. 
+Class Diagram 
+ 
+![percobaan1](img/percobaan1.PNG)
 
-
-![percobaan1](img/percobaan1a.png)
-
-![percobaan1](img/percobaan1b.png)
+![percobaan1](img/percobaan1a.PNG)
+![percobaan1](img/percobaan1b.PNG)
+![percobaan1](img/percobaan1c.PNG)
+![percobaan1](img/percobaan1d.PNG)
+![percobaan1](img/percobaan1e.PNG)
 
 link kode program : 
-[Motor1841720126Ela](../../src/3_Enkapsulasi/Motor1841720126Ela.java)
+[Processor1841720126Ela](../../src/4_Relasi_Class/Processor1841720126Ela.java)
 link kode program : 
-[MotorDemo1841720126Ela](../../src/3_Enkapsulasi/MotorDemo1841720126Ela.java)
-
-### Percobaan 2 - Access Modifier
-
-Pada percobaan ini akan digunakan access modifier untuk memperbaiki cara kerja class Motor pada percobaan ke-1. 
-
-![percobaan2](img/percobaan2a.png)
-
-![percobaan2](img/percobaan2b.png)
-
-![percobaan2](img/percobaan2c.png)
+[Laptop1841720126Ela](../../src/4_Relasi_Class/Laptop1841720126Ela.java)
+link kode program : 
+[MainPercobaan1_1841720126Ela](../../src/4_Relasi_Class/MainPercobaan1_1841720126Ela.java)
 
 
-link kode program : [Motor1841720126Ela](../../src/3_Enkapsulasi/Motor1841720126Ela.java)
-link kode program : [MotorDemo1841720126Ela](../../src/3_Enkapsulasi/MotorDemo1841720126Ela.java)
+### Pertanyaan Percobaan 1
 
-## Pertanyaan percobaan 2
-
-1. Pada class TestMobil, saat kita menambah kecepatan untuk pertama kalinya,
- mengapa muncul peringatan “Kecepatan tidak bisa bertambah karena Mesin Off!”?  
-jawab : : Karena status kontak masih off,  oleh karena itu kecepatan tidak bisa ditambah kecuali dinyalakan terlebih dahulu 
-2. Mengapat atribut kecepatan dan kontakOn diset private?
-jawab :  Agar atribut kecepatan pada class Motor.java tidak bisa diganti nilainya kecuali dengan method khusus pada class MotorDemo1841720126Ela.java 
-3. Ubah class Motor sehingga kecepatan maksimalnya adalah 100! 
+1. Di dalam class Processor dan class Laptop , 
+terdapat method setter dan getter untuk masing‑masing atributnya. 
+Apakah gunanya method setter dan getter tersebut ? 
 jawab : 
-![percobaan2 pertanyaan](img/p2jwb3.png)
+fungsinya sesuai dengan namanya yaitu untu menge-set (memberi nilai) 
+dan menge-get (mendapatkan/melihat nilai) pada suatu variabel atau class 
+dengan contructor default
+
+2. Di dalam calss processor dan class Laptop, masing-masing terdapat kontruktor default dan kontruktor berparameter. 
+Bagaimana beda penggunaan dari kedua jenis konstruktor tersebut?
+jawab : 
+bila konstruktor default, untuk memberi nilai menggunakan setter, 
+tetapi jika kita menggunakan konstruktor berparameter, 
+kita hanya perlu memberi nilai di parameter pada objek di class main.
+
+3. Perhatikan class Laptop, diantara 2 atribut yang dimiliki (merk dan proc), atribut mana yang bertipe object?
+Jawab : 
+proc, karena inisiasi tipe variabel ditandai dengan nama object.
+
+4. Perhatikan class Laptop, pada baris manakah yang menunjukan bahwa class Laptop memiliki relasi dengan class Processor?
+Jawab : 
+Terlihat jelas pada constructor, terdapat parameter yang menggunakan object Processor yang telah diinisiasi sebelumnya.
+![percobaan1](img/p1jwb4.PNG)
+
+5. Perhatikan class Laptop, apakah guna dari sintaks proc.Info()?
+Jawab : proc.Info(), merupakan syntax yang digunakan untuk menjalankan method Info() pada class Processor.
+
+6. Pada class MainPercobaan1, terdapat baris kode Laptop l = new Laptop(“Thinkpad”, p);  . apakah p tersebut? Dan apakah yang tejadi jika baris tersebut diubah menjadi Laptop l = new Laptop(“Thinkpad”, new Processor(“Intel i5”, 3)); . Bagaimana hasil program saat dijalankan, apakah ada perubahan?
+Jawab : p merupakan object dari class Processor yang tadi telah diinstansiasi, Lalu kode program yang baru hasilnya sama saja, kode program tersebut memiliki perbedaan pada instansiasi dalam bentuk variabel object, bila pada kode program tersebut object tidak perlu diinstansiasi kedalam variabel lain tetapi ter nested atau bisa dibilang melakukan instansiasi objek dialam instansiasi object.
+
+
+### Percobaan 2 
+
+Perhatikan diagram class berikut yang menggambarkan sistem rental mobil. Pelanggan bisa menyewa mobil sekaligus sopir. Biaya sopir dan biaya sewa mobil dihitung per hari. 
+![percobaan2](img/percobaan2.PNG)
+
+![percobaan2](img/percobaan2a.PNG)
+![percobaan2](img/percobaan2b.PNG)
+![percobaan2](img/percobaan2c.PNG)
+![percobaan2](img/percobaan2d.PNG)
+![percobaan2](img/percobaan2e.PNG)
+
+link kode program : 
+[Mobil1841720126Ela](../../src/4_Relasi_Class/Mobil1841720126Ela.java)
+link kode program : 
+[Sopir1841720126Ela](../../src/4_Relasi_Class/Sopir1841720126Ela.java)
+link kode program : 
+[Pelanggan1841720126Ela](../../src/4_Relasi_Class/Pelanggan1841720126Ela.java)
+link kode program : 
+[MainPercobaan2_1841720126Ela](../../src/4_Relasi_Class/MainPercobaan2_1841720126Ela.java)
+
+### Pertanyaan percobaan 2
+
+1. Perhatikan class Pelanggan. Pada baris program makanan yang menunjukan bahwa class Pelanggan memiliki relasi dengan class Mobil dan class Sopir?
+Jawab :  
+Dapat dilihat pada inisiasi  variabel object di class pelanggan
+![percobaan2](img/p2jwb1.PNG)
+
+2. Perhatikan method hitungBiayaSopir pada class Sopir, serta method hitungBiayaMobil pada calss Mobil. Mengapa menurut anda method tersebut harus memiliki argument hari?
+Jawab : 
+argumen tersebut nantinya digunakan untuk diisi dengan variabel int hari pada class Pelanggan 
+
+3. Perhatikan class Pelanggan. Untuk apakah perintah
+mobil.hitungBiayaMobil(hari) dan sopir.hitungBiayaSopir(hari)?
+Jawab : 
+kode program tersebut digunakan untuk menjumlahkan biaya mobil yang diambil dari harga sopir dikali dengan hari lalu yang dijumlahkan dengan biaya sopir yang diambil dari harga sopir dikali hari.
+
+4. Perhatikan class MainPercobaan2. Untuk apakah sintaks p.setMobil(m) dan p.setSopir(s)?
+Jawab : 
+kode program tersebut digunakan untuk memberi atau mengisi nilai dari namaMobil dan namaSopir yang ada pada objek pelanggan
+
+5. Perhatikan class MainPercobaan2. Untuk apakah proses p.hitungBiayaTotal() tersebut?
+jawab : 
+Digunakan untuk menghitung biaya total dari penjumlahan antara biaya sopir dan biaya mobil.
+
+6. Perhatikan class MainPercobaan2 coba tambahkan pada baris terakhir dari method main dan amati perubahan saat di-run!
+System.out.println(p.getMobil().getMerk();
+Jadi untuk apakah sintaks diatas yang ada didalam method main tersebut?
+Jawab : 
+perintah tersebut digunakan untuk menggembalikan atau me return nilai atribut dari method  getMerk() pada class Mobil melalui objek pelanggan, atau setelah me return object Mobil pada class pelanggan, object mobil akan me return String getMerk() pada class mobil
+
 
 
  
 
-## Percobaan 3-Getter dan Setter
-Misalkan di sebuah sistem informasi koperasi, terdapat class Anggota. Anggota memiliki atribut nama, alamat dan simpanan, dan method setter, getter dan setor dan pinjam.
-Semua atribut pada anggota tidak boleh diubah sembarangan, melainkan hanya dapat diubah melalui method setter, getter, setor dan tarik.
-Khusus untuk atribut simpanan tidak terdapat setter karena simpanan akan bertambah ketika melakukan transaksi setor dan akan berkurang ketika melakukan peminjaman/tarik. 
+## Percobaan 3
 
-![percobaan3](img/percobaan3a.png)
+Pada percobaan‑percobaan sebelumnya, relasi dalam class dinyatakan dalam one‑to‑one. Tetapi ada kalanya relasi class melibatkan lebih dari satu. Hal ini disebut dengan multiplicity. Untuk relasi lebih rinci mengenai multiplicity, dapat dilihat pada tabel berikut. 
+Sebuah Kereta Api dioperasikan oleh Masinis serta seorang Asisten Masinis. Baik Masinis maupun Asisten Masinis keduanya merupakan Pegawai PT. Kereta Api Indonesia. Dari ilustrasi cerita tersebut, dapat digambarkan dalam diagram kelas sebagai berikut: 
 
-![percobaan3](img/percobaan3b.png)
+![percobaan3](img/percobaan3.PNG)
 
-link kode program : [Anggota1841720126Ela](../../src/3_Enkapsulasi/Anggota1841720126Ela.java)
-link kode program : [KoperasiDemo1841720126Ela](../../src/3_Enkapsulasi/KoperasiDemo1841720126Ela.java)
+![percobaan3](img/percobaan3a.PNG)
+![percobaan3](img/percobaan3b.PNG)
+![percobaan3](img/percobaan3c.PNG)
+![percobaan3](img/percobaan3d.PNG)
+![percobaan3](img/percobaan3e.PNG)
+![percobaan3](img/percobaan3f.PNG)
 
-Dapat dilihat pada hasil percobaan diatas, untuk mengubah simpanan tidak dilakukan secara
- langsung dengan mengubah atribut simpanan, melainkan melalui method setor() dan pinjam(). 
-Untuk menampilkan nama pun harus melalui method getNama(), dan untuk menampilkan simpanan melalui getSimpanan(). 
+link kode program : 
+[Pegawai1841720126Ela](../../src/4_Relasi_Class/Pegawai1841720126Ela.java)
+link kode program : 
+[KeretaApi1841720126Ela](../../src/4_Relasi_Class/KeretaApi1841720126Ela.java)
+link kode program : 
+[MainPercobaan3_1841720126Ela](../../src/4_Relasi_Class/MainPercobaan3_1841720126Ela.java)
 
-## Percobaan 4-Konstruktor Instansiasi
 
-1. Langkah pertama percobaan 4 adalah ubah class KoperasiDemo1841720126Ela seperti berikut dan Hasil dari program tersebut adalah sebagai berikut
-![percobaan4](img/percobaan4a.png)
+## Pertanyaan Percobaan 3 
 
-2. Ubah class Anggota1841720126Ela menjadi seperti berikut 
- Pada class Anggota1841720126Ela dibuat kontruktor dengan access modifier default yang memiliki 2 parameter nama dan alamat. Dan didalam konstruktor tersebut dipastikan nilai simpanan untuk pertama kali adalah Rp. 0.
-![percobaan4](img/percobaan4b.png)
+1. Dalam method info() pada class KeretaApi, baris this.masinis.info() dan this.asisten.info() digunakan untuk apa?
+Jawab : 
+digunakan untuk memanggil method Info yang berada di class Pegawai melalui object masinis dan asisten
 
-3. Selanjutnya ubah class KoperasiDemo1841720126Ela sebagai berikut
-![percobaan4](img/percobaan4c.png)
+2. Buatlah main program baru dengan nama class MainPertanyaan pada package yang sama. Tambahkan kode berikut pada method main()
+Jawab : 
+![percobaan3](img/p3jwb2.PNG)
 
-link kode program : [Anggota1841720126Ela](../../src/3_Enkapsulasi/Anggota1841720126Ela.java)
-link kode program : [KoperasiDemo1841720126Ela](../../src/3_Enkapsulasi/KoperasiDemo1841720126Ela.java)
+3. Apa hasil output dari main program tersebut ? Mengapa hal tersebut dapat terjadi ?
+jawab : 
+![percobaan3](img/p3jwb2.PNG)
 
-Setelah menambah konstruktor pada class Anggoata maka atribut nama dan alamat secara otomatis harus diset terlebih dahulu 
-dengan melakukan passing parameter jika melakukan instansiasi class Anggota. Hal ini biasa dilakukan untuk atribut yang 
-membutuhkan nilai yang spesifik. Jika tidak membutuhkan nilai spesifik dalam konstruktor tidak perlu parameter. 
-Contohnya simpanan untuk anggota baru diset 0, maka simpanan tidak perlu untuk dijadikan parameter pada konstruktor. 
+4. Perbaiki class KeretaApi sehingga program dapat berjalan !
+jawab :
+![percobaan3](img/p3jwb4.PNG)
+link kode program : 
+[MainPertanyaan1841720126Ela](../../src/4_Relasi_Class/MainPertanyaan1841720126Ela.java)
 
-## Pertanyaan Percobaan 3 & 4
 
-1. Apa yang dimaksud getter dan setter? 
-Jawab : Getter adalah public method dan memiliki tipe data return, yang berfungsi untuk mendapatkan nilai dari atribut private. Sedangkan setter adalah public method yang tidak memliki tipe data return, yang berfungsi untuk memanipulasi nilai dari atribut private. 
-2. Apa kegunaan dari method getSimpanan()? 
-Jawab : Merupakan method yang digunakan untuk mendapatkan nilai dari atribut simpanan yang nantinya method tersebut digunkan untuk menampilkan nilai dari atribut simpanan 
-3. Method apa yang digunakan untk menambah saldo? 
-Jawab : Method setor 
-4. Apa yand dimaksud konstruktor? 
-Jawab : Konstruktor mirip dengan method cara deklarasinya akan tetapi tidak memiliki tipe return. Dan konsturktor dieksekusi ketika instan dari objek dibuat. Jadi setiap kali sebuat objek dibuat dengan keyword new() maka konstruktor akan dieksekusi. Atau kalau dari pandangan saya konstruktor merupakan cara untuk menambah parameter pada objek. 
-5. Sebutkan aturan dalam membuat konstruktor? 
-Jawab :  
-• Nama konstruktor harus sama dengan nama class 
-• Konstruktor tidak memiliki tipe data return 
-• Konstruktor tidak boleh menggunakan modifier abstract, static, final, dan syncronized 
-6. Apakah boleh konstruktor bertipe private? 
-Jawab : Tidak, bila private maka objek tidak bisa diakes atau tidak bisa di instansiasi oleh class lain 
-7. Kapan menggunakan parameter dengan passsing parameter? 
-Jawab : Bila kita menggunakan konstruktor maka sebaiknya kita menggunakan passing parameter dan juga sebaliknya. 
-8. Apa perbedaan atribut class dan instansiasi atribut? 
-Jawab :  Class merupakan brueprint dari prototype dari objek, kalau instansiasi dibunakan untuk memanggil sebuah objek dari class yang lain. 
-9. Apa perbedaan class method dan instansiasi method? 
-Jawab : Method merupakan suatu operasi berupa fungsi-fungsi yang dapat dikerjakan oleh suatu object.
+
+## Percobaan 4
+
+![percobaan4](img/percobaan4.PNG)
+
+
+![percobaan4](img/percobaan4a.PNG)
+![percobaan4](img/percobaan4b.PNG)
+![percobaan4](img/percobaan4c.PNG)
+![percobaan4](img/percobaan4d.PNG)
+![percobaan4](img/percobaan4e.PNG)
+![percobaan4](img/percobaan4f.PNG)
+![percobaan4](img/percobaan4g.PNG)
+
+link kode program : 
+[Penumpang1841720126Ela](../../src/4_Relasi_Class/Penumpang1841720126Ela.java)
+link kode program : 
+[Kursi1841720126Ela](../../src/4_Relasi_Class/Kursi1841720126Ela.java)
+link kode program : 
+[Gerbong1841720126Ela](../../src/4_Relasi_Class/Gerbong1841720126Ela.java)
+link kode program : 
+[MainPercobaan4_1841720126Ela](../../src/4_Relasi_Class/MainPercobaan4_1841720126Ela.java)
+
+
+## Pertanyaan Percobaan 4
+
+1. Pada main program dalam class MainPercobaan4, berapakah jumlah kursi dalam Gerbong A?
+Jawab : 10, dapat dilihat pada instansiasi new Gerbong atau pada output bisa dilihat perulangan “Nomer : 10” 
+
+2. Perhatikan potongan kode pada method info() dalam class Kursi. Apa maksud kode tersebut ? 
+... if (this.penumpang != null) { info += "Penumpang: " + penumpang.info() + "\n"; } ... 
+jawab : 
+potongan kode program tersebut digunakan untuk menampilkan kursi yang terisi oleh penumpang, tetapi bila penumpang tidak bernilai atau null, maka kode program yang terdapat pada if tidak dijalankan atau berarti kursi tersebut masih kosong
+
+3. Mengapa pada method setPenumpang() dalam class Gerbang, nilai nomer dikurangi dengan angka 1?
+Jawab : karena index array selalu dimulai dari 0, oleh karena itu nilai nomer harus dikurangi 1 agar array di index 0 atau di index pertama dapat terisi
+
+4. Intansiasi object baru budi dengan tipe Penumpang, kemudian masukan object baru tersebut pada gerbong dengan gerbong.setPenumpang(budi,1). Apakah yang terjadi?
+jawab : 
+![percobaan4](img/p4jwb4.PNG)
+
+5. Modifikasi program sehingga, tidak diperkenankan untuk menduduki kursi yang sudah ada penumpang lain!
+Jawab : 
+Kode program pada class Gerbong 
+![percobaan4](img/p4jwb5.PNG)
 
 
 ## Tugas
 
- 1. Cobalah program dibawah ini dan tuliskan hasil outputnya 
-jawab : 
-![Tugas1](img/tugas1a.png)
-![Tugas1](img/tugas1b.png)
+ Buatlah sebuah studi kasus, rancang dengan class diagram, kemudian implementasikan ke dalam program! Studi kasus harus mewakili relasi class dari percobaan‑percobaan yang telah dilakukan pada materi ini, setidaknya melibatkan minimal 4 class (class yang berisi main tidak dihitung). 
 
-link kode program : [EncapDemo1841720126Ela](../../src/3_Enkapsulasi/EncapDemo1841720126Ela.java)
-link kode program : [EncapTest1841720126Ela](../../src/3_Enkapsulasi/EncapTest1841720126Ela.java)
 
-2. Pada program diatas, pada class EncapTest kita mengeset age dengan nilai 35, namun pada saat ditampilkan ke layar nilainya 30, jelaskan mengapa. 
-jawab : 
- Karena pada method setAgeEla() terdapat percabangan yang didalamnya berisi bila nilai dari atribut age lebih dari 30 maka nilai age akan menjadi 30 
+![Tugas](img/tugas1a.PNG)
+![Tugas](img/tugas1b.PNG)
+![Tugas](img/tugas1c.PNG)
+![Tugas](img/tugas1d.PNG)
+![Tugas](img/tugas1e.PNG)
+![Tugas](img/tugas1f.PNG)
+![Tugas](img/tugas1g.PNG)
+![Tugas](img/tugas1h.PNG)
+![Tugas](img/tugas1i.PNG)
 
-3. Ubah program diatas agar atribut age dapat diberi nilai maksimal 30 dan minimal 18. 
-jawab : 
-![Tugas3](img/tugas3a.png)
-![Tugas3](img/tugas3b.png)
+link kode program : 
+[Pasien1841720126Ela](../../src/4_Relasi_Class/Pasien1841720126Ela.java)
+link kode program : 
+[Dokter1841720126Ela](../../src/4_Relasi_Class/Dokter1841720126Ela.java)
+link kode program : 
+[Suster1841720126Ela](../../src/4_Relasi_Class/Suster1841720126Ela.java)
+link kode program : 
+[Riwayat1841720126Ela](../../src/4_Relasi_Class/Riwayat1841720126Ela.java)
+link kode program : 
+[MainTugas1841720126Ela](../../src/4_Relasi_Class/MainTugas1841720126Ela.java)
 
-link kode program : [EncapDemo1841720126Ela](../../src/3_Enkapsulasi/EncapDemo1841720126Ela.java)
-link kode program : [EncapTest1841720126Ela](../../src/3_Enkapsulasi/EncapTest1841720126Ela.java)
 
-4. Pada sebuah sistem informasi koperasi simpan pinjam, terdapat class Anggota yang memiliki atribut antara lain nomor KTP, nama, limit peminjaman, dan jumlah pinjaman.
-Anggota dapat meminjam uang dengan batas limit peminjaman yang ditentukan.
-Anggota juga dapat mengangsur pinjaman. Ketika Anggota tersebut mengangsur pinjaman, 
-maka jumlah pinjaman akan berkurang sesuai dengan nominal yang diangsur.
-Buatlah class Anggota tersebut, berikan atribut, method dan konstruktor sesuai dengan kebutuhan.
-Uji dengan TestKoperasi berikut ini untuk memeriksa apakah class Anggota yang anda buat telah sesuai dengan yang diharapkan. 
-jawab : 
-![Tugas4](img/tugas4a.png)
-![Tugas4](img/tugas4b.png)
-
-link kode program : [AnggotaTugas1841720126Ela](../../src/3_Enkapsulasi/AnggotaTugas1841720126Ela.java)
-link kode program : [TestKoperasi1841720126Ela](../../src/3_Enkapsulasi/TestKoperasi1841720126Ela.java)
-
-5. Modifikasi soal no. 4 agar nominal yang dapat diangsur minimal adalah 10% dari jumlah pinjaman saat ini.
-Jika mengangsur kurang dari itu, maka muncul peringatan “Maaf, angsuran harus 10% dari jumlah pinjaman”. 
-jawab : 
-![Tugas5](img/tugas5a.png)
-![Tugas5](img/tugas5b.png)
-
-link kode program : [AnggotaTugas1841720126Ela](../../src/3_Enkapsulasi/AnggotaTugas1841720126Ela.java)
-link kode program : [TestKoperasi1841720126Ela](../../src/3_Enkapsulasi/TestKoperasi1841720126Ela.java)
-
-6. Modifikasi class TestKoperasi, agar jumlah pinjaman dan angsuran dapat menerima input dari console. 
-jawab : 
-![Tugas6](img/tugas6a.png)
-![Tugas6](img/tugas6b.png)
-![Tugas6](img/tugas6c.png)
-![Tugas6](img/tugas6d.png)
-
-link kode program : [AnggotaTugas1841720126Ela](../../src/3_Enkapsulasi/AnggotaTugas1841720126Ela.java)
-link kode program : [TestKoperasi1841720126Ela2](../../src/3_Enkapsulasi/TestKoperasi1841720126Ela2.java)
 
 ## Kesimpulan
 
-dalam pratikum ini, telah dipelajari konsep  enkpsulasi dan konstruktor. Memahami konsep akses modifier.
-Memahami konsep Instansiasi atribut atau method  Cara penggunaan getter dan setter beserta fungsi dari getter dan setter.  
+dalam pratikum ini, telah dipelajari konsep relasi class 
+dan Memahami konsep mengimplementasikan relasi has-a dalam program.  
+
+
 
 ## Pernyataan Diri
 
